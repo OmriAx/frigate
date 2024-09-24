@@ -3,7 +3,7 @@
 set -euxo pipefail
 
 apt-get -qq update
-
+apt-get -qq full-upgrade -y
 apt-get -qq install --no-install-recommends -y \
     apt-transport-https \
     gnupg \
@@ -13,7 +13,8 @@ apt-get -qq install --no-install-recommends -y \
     python3-pip \
     curl \
     jq \
-    nethogs
+    nethogs \
+    hailo-all
 
 mkdir -p -m 600 /root/.gnupg
 
