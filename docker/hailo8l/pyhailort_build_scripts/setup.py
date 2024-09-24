@@ -106,6 +106,6 @@ if __name__ == "__main__":
             "win_amd64",
         ],
         url="https://hailo.ai/",
-        version="4.17.0",
+        version="4.18.0",
         zip_safe=False,
     )
